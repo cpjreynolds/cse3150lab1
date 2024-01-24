@@ -12,11 +12,9 @@ all: $(TARGET)
 test: all
 	./$(TARGET)
 
-$(TARGET): $(OBJECTS)
-	$(CXX) $(CXXFLAGS) $^ -o $(TARGET)
+$(TARGET): $(SOURCES)
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $^ -o $(TARGET)
 
-%.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c $^
 
 clean:
 	rm -f \
