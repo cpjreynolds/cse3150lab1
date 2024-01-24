@@ -2,7 +2,7 @@ CXXFLAGS=-Wall -g
 
 TARGET=lab1
 
-SOURCES=prefix.cpp
+SOURCES=$(wildcard *.cpp)
 OBJECTS=$(SOURCES:.cpp=.o)
 
 .PHONY: all clean test
