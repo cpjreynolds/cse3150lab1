@@ -12,7 +12,7 @@ all: $(TARGET)
 test: all
 	./$(TARGET)
 
-$(TARGET): $(SOURCES)
+$(TARGET): $(OBJECTS)
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $^ -o $(TARGET)
 
 
