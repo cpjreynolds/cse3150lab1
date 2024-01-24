@@ -1,6 +1,6 @@
-CXXFLAGS=-Wall -g
+CXXFLAGS=-Wall -g --std=c++17
 
-TARGET=lab1
+TARGET=lab1.out
 
 SOURCES:=$(wildcard *.cpp)
 OBJECTS:=$(SOURCES:.cpp=.o)
