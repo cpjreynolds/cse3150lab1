@@ -13,7 +13,7 @@ test: all
 	./$(TARGET)
 
 $(TARGET): $(OBJECTS)
-	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $^ -o $(TARGET)
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $^ -o $@
 
 
 clean:
