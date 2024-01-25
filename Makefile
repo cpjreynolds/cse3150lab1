@@ -5,11 +5,11 @@ TARGET=lab1.out
 SOURCES:=$(wildcard *.cpp)
 OBJECTS:=$(SOURCES:.cpp=.o)
 
-.PHONY: all clean test
+.PHONY: all clean check
 
 all: $(TARGET)
 
-test: all
+check: all
 	./$(TARGET)
 
 $(TARGET): $(OBJECTS)
